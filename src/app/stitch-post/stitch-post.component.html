@@ -1,0 +1,154 @@
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div style="text-align: center">
+  <h1>{{message}}</h1>
+</div>
+<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+  <div class="row d-flex">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <form>
+        <fieldset>
+          <legend class="text-center">
+            Enter all measurments in inches
+            <span class="req"><small> required *</small></span>
+          </legend>
+          <div class="form-group">
+            <label for="customerId"
+              ><span class="req">* </span> CustomerId:
+            </label>
+            <input
+              required
+              type="text"
+              [(ngModel)]="measure.customerId"
+              name="customerId"
+              id="customerId"
+              class="form-control phone"
+              maxlength="28"
+              placeholder="Enter your CustomerId..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="waist"><span class="req">* </span> Waist: </label>
+            <input
+              class="form-control"
+              type="text"
+              [(ngModel)]="measure.waist"
+              name="waist"
+              id="txt"
+              required
+              placeholder="Enter your waist size in inches"
+            />
+            <div id="errWaist"></div>
+          </div>
+          <div class="form-group">
+            <label for="abdomen"><span class="req">* </span> Abdomen: </label>
+            <input
+              class="form-control"
+              type="text"
+              [(ngModel)]="measure.abdomen"
+              name="abdomen"
+              id="txt"
+              required
+              placeholder="Enter your Abdomen size in inches"
+            />
+            <div id="errAbdomen"></div>
+          </div>
+          <div class="form-group">
+            <label for="hip"><span class="req">* </span> Hip: </label>
+            <input
+              class="form-control"
+              type="text"
+              [(ngModel)]="measure.hip"
+              name="hip"
+              id="txt"
+              required
+              placeholder="Enter your Hip size in inches"
+            />
+            <div id="errWaist"></div>
+          </div>
+          <div class="form-group">
+            <label for="thigh"><span class="req">* </span> Thigh: </label>
+            <input
+              class="form-control"
+              type="text"
+              [(ngModel)]="measure.thigh"
+              name="thigh"
+              id="txt"
+              required
+              placeholder="Enter your thigh size in inches"
+            />
+            <div id="errThigh"></div>
+          </div>
+          <div class="form-group">
+            <label for="knee"><span class="req">* </span> Knee: </label>
+            <input
+              class="form-control"
+              type="text"
+              [(ngModel)]="measure.knee"
+              name="knee"
+              id="txt"
+              required
+              placeholder="Enter your Knee size in inches"
+            />
+            <div id="errKnee"></div>
+          </div>
+          <div class="form-group">
+            <label for="calf"><span class="req">* </span> Calf: </label>
+            <input
+              class="form-control"
+              type="text"
+              [(ngModel)]="measure.calf"
+              name="calf"
+              id="txt"
+              required
+              placeholder="Enter your Calf size in inches"
+            />
+            <div id="errCalf"></div>
+          </div>
+          <div class="form-group">
+            <label for="inStep"><span class="req">* </span> InStep: </label>
+            <input
+              class="form-control"
+              type="text"
+              [(ngModel)]="measure.inStep"
+              name="inStep"
+              id="txt"
+              required
+              placeholder="Enter your inStep size in inches"
+            />
+            <div id="errinStep"></div>
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-success"
+              type="submit"
+              name="submit_reg"
+              value="Register"
+              (click)="registerNow()"
+            />
+          </div>
+        </fieldset>
+      </form>
+      <!-- ends register form -->
+      <!-- second for to fiter measure-->
+    </div>
+    <div class="col-md-6 col-sm-6 col-lg-6">
+      <div class="card1 pb-5">
+        <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
+          <img
+            src="https://aces.nmsu.edu/pubs/_c/C209/images/C209_figa.jpg"
+            class="image"
+            style="border-top-width: 50px;margin-top: 50px;"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ends col-6 -->
+  </div>
+</div>
